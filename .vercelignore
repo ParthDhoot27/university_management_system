@@ -1,0 +1,19 @@
+# Ignore backend directory (not needed for Vercel deployment)
+backend/
+node_modules/
+*.log
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore development files
+README.md
+DEPLOYMENT_GUIDE.md
+start.bat
+start.sh
+
+# Ignore root package files (using frontend package.json)
+package.json
+package-lock.json
