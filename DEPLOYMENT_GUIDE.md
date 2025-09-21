@@ -38,10 +38,11 @@
 3. **Import your repository** from GitHub
 4. **Configure the project:**
    - **Framework Preset**: Next.js
-   - **Root Directory**: `frontend`
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `.next` (default)
-   - **Install Command**: `npm install`
+   - **Root Directory**: `frontend` (IMPORTANT!)
+   - **Build Command**: `npm run build` (will be auto-detected)
+   - **Output Directory**: `.next` (will be auto-detected)
+   - **Install Command**: `npm install` (will be auto-detected)
+5. **Click "Deploy"**
 
 ### Step 3: Environment Variables (Optional)
 If you need custom environment variables:
