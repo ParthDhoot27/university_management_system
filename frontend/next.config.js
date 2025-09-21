@@ -1,8 +1,6 @@
-// Purpose: Next.js configuration for ERP-Lite frontend
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['localhost', 'images.unsplash.com'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -12,15 +10,16 @@ const nextConfig = {
       },
     ],
   },
-  env: {
-    CUSTOM_KEY: process.env.CUSTOM_KEY,
-  },
   // Optimize for production
   swcMinify: true,
   // Enable compression
   compress: true,
   // Ensure proper trailing slash handling
   trailingSlash: false,
+  // Enable experimental features for better performance
+  experimental: {
+    optimizePackageImports: ['lucide-react'],
+  },
 }
 
 module.exports = nextConfig
