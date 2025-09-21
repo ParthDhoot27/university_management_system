@@ -1,4 +1,5 @@
-# Ignore backend directory (not needed for Vercel deployment)
+# Ignore old frontend and backend directories
+frontend/
 backend/
 node_modules/
 *.log
@@ -11,9 +12,13 @@ node_modules/
 # Ignore development files
 README.md
 DEPLOYMENT_GUIDE.md
+TROUBLESHOOTING.md
+FINAL_DEPLOYMENT_GUIDE.md
 start.bat
 start.sh
 
-# Ignore root package files (using frontend package.json)
-package.json
-package-lock.json
+# Ignore old package files
+frontend/package.json
+frontend/package-lock.json
+backend/package.json
+backend/package-lock.json
