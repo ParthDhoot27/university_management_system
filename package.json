@@ -1,0 +1,16 @@
+{
+  "name": "erp-lite-prototype",
+  "version": "1.0.0",
+  "description": "ERP-Lite prototype with Next.js frontend and Node.js backend",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
