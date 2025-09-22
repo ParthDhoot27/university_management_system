@@ -33,9 +33,9 @@ app.get('/health', (req, res) => {
   });
 });
 
-app.use('/api/student', studentRoutes);
-app.use('/api/professor', professorRoutes);
-app.use('/api/admin', adminRoutes);
+app.use('/student', studentRoutes);
+app.use('/professor', professorRoutes);
+app.use('/admin', adminRoutes);
 
 app.use('*', (req, res) => {
   res.status(404).json({
