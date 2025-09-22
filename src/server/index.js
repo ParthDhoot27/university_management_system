@@ -6,9 +6,9 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 require('dotenv').config();
 
-const studentRoutes = require('./routes/student');
-const professorRoutes = require('./routes/professor');
-const adminRoutes = require('./routes/admin');
+const studentRoutes = require('./routes/api/student');
+const professorRoutes = require('./routes/api/professor');
+const adminRoutes = require('./routes/api/admin');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -33,9 +33,9 @@ app.get('/health', (req, res) => {
   });
 });
 
-app.use('/student', studentRoutes);
-app.use('/professor', professorRoutes);
-app.use('/admin', adminRoutes);
+app.use('/api/student', studentRoutes);
+app.use('/api/professor', professorRoutes);
+app.use('/api/admin', adminRoutes);
 
 app.use('*', (req, res) => {
   res.status(404).json({
