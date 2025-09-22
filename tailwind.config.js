@@ -1,4 +1,3 @@
-// Purpose: Tailwind CSS configuration for ERP-Lite with custom theme
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -35,18 +34,12 @@ module.exports = {
           900: '#0f172a',
         },
       },
-      fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-      },
-      borderRadius: {
-        'xl': '1rem',
-        '2xl': '1.5rem',
-      },
       boxShadow: {
-        'soft': '0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04)',
-        'soft-lg': '0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+        soft: '0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04)',
       },
     },
   },
   plugins: [],
-}
+};
+
+

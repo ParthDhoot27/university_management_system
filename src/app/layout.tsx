@@ -1,7 +1,7 @@
-// Purpose: Root layout component for ERP-Lite application
-import type { Metadata } from 'next';
+// Root layout component
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css';
+import '@/styles/globals.css';
 import { AuthProvider } from '@/context/AuthContext';
 import { ThemeProvider } from '@/context/ThemeContext';
 
@@ -12,14 +12,14 @@ export const metadata: Metadata = {
   description: 'A modern ERP system for students, professors, and administrators',
   keywords: 'ERP, university, management, student, professor, admin',
   authors: [{ name: 'ERP-Lite Team' }],
-  viewport: 'width=device-width, initial-scale=1',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} bg-gray-50 dark:bg-gray-900 transition-colors`}>
@@ -32,3 +32,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+
