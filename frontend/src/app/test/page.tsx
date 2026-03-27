@@ -1,4 +1,6 @@
 // Purpose: Test page to verify deployment is working
+'use client';
+
 export default function TestPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
